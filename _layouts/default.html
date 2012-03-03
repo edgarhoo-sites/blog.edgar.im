@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Edgar's Blog</title>
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <link rel="alternate" href="http://feeds.edgarhoo.net/edgar-blog" title="Edgar's Blog » Feed" type="application/rss+xml" />
+        <link rel="stylesheet" media="all" href="http://static.edgarhoo.net/app/blog/i.css" />
+        <link rel="stylesheet" href="http://static.edgarhoo.net/sys/highlight/pygments.css" />
+        <link rel="index" href="http://blog.edgar.im/" title="Edgar's Blog" />
+    </head>
+    <body>
+        <div id="im-edgar-blog" class="home">
+            {% include header.html %}
+            <div id="container">
+                <div id="content">
+                    <div id="main" role="main">
+                        {{ content }}
+                    </div>
+                </div>
+                <div id="sidebar" class="widget-area" role="complementary">
+                    {% include widget/recent_posts.html %}
+                    {% include widget/blogroll.html %}
+                </div>
+            </div>
+            {% include footer.html %}
+        </div>
+        <script src="http://static.edgar.im/app/ga/im.js"></script>
+    </body>
+</html>
