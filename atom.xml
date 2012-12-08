@@ -14,7 +14,7 @@ layout: nil
         <email>mail@edgarhoo.net</email>
         </author>
  
-    {% for post in site.categories.article limit:5 %}
+    {% for post in site.posts limit:5 %}
     <entry>
         <title>{{ post.title }}</title>
         <link href="http://blog.edgar.im{{ post.url }}"/>

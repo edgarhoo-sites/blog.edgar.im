@@ -1,0 +1,16 @@
+            {% if site.tags[tag].size > 1 %}
+                <aside id="same-tag-posts" class="widget widget_posts">
+                    <h3 class="widget-title">Same Tag Posts</h3>
+                    <ul>
+                        {% assign count = 0 %}
+                        {% for post in site.tags[tag] limit:6 %}
+                            {% if post.id != page.id and count < 5 %}
+                                {% capture count %}{{ count | plus:1 }}{% endcapture %}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% assign count = null %}
+                    </ul>
+                </aside>
+                {% assign tag = null %}
+            {% endif %}

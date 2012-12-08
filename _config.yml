@@ -1,4 +1,4 @@
 baseurl: http://blog.edgar.im
 auto: true
 pygments: true
-permalink: none
+permalink: /article/:title.html

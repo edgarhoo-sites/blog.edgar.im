@@ -1,1 +1,2 @@
-Edgar's Blog
+Edgar's Blog   
+http://blog.edgar.im/

@@ -32,7 +32,11 @@
                     </div>
                 </div>
                 <div id="sidebar" class="widget-area" role="complementary">
-                    {% include widget/recent_posts.html %}
+                    {% include widget/recently_posts_post.html %}
+                    {% assign category = page.categories[0] %}
+                    {% include widget/same_category_posts.html %}
+                    {% assign tag = page.tags[0] %}
+                    {% include widget/same_tag_posts.html %}
                 </div>
             </div>
             {% include footer.html %}

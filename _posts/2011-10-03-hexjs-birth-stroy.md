@@ -1,8 +1,8 @@
 ---
 layout: post
 title: HexJS诞生记
-category: Javascript
-tag: HexJS
+categories: [Javascript]
+tags: [HexJS]
 ---
 
 

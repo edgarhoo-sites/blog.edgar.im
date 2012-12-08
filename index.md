@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: home
 title: Edgar's Blog
 ---
 
 
-{% for post in site.categories.article limit:1 %}
+{% for post in site.posts limit:1 %}
 <article class="post">
     <header class="entry-header">
         <div class="entry-meta">
@@ -21,9 +21,9 @@ title: Edgar's Blog
 </article>
 {% endfor %}
 
-{% if site.categories.article.size > 1 %}
-    {% for rpost in site.categories.article limit:5 offset:1 %}
-<article class="post recent-post">
+{% if site.posts.size > 1 %}
+    {% for rpost in site.posts limit:5 offset:1 %}
+<article class="post recently-post">
     <div class="entry-header">
         <div class="entry-meta">
             <time class="entry-date">{{ rpost.date | date: "%B %d, %Y" }}</time>
