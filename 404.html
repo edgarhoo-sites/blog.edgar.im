@@ -3,7 +3,15 @@
     <head>
         <meta charset="utf-8"/>
         <title>Edgar's Blog</title>
-        <meta http-equiv="refresh" content="2; url=/" />
+        <script>
+        if ( window.location.href.indexOf('we-need-basic-framework') > 0 ){
+            window.location.pathname = '/article/we-need-what-kind-of-frontend-framework.html';
+        } else {
+            setTimeout( function(){
+                window.location.href = '/';
+            }, 2000 );
+        }
+        </script>
     </head>
     <body>
         <h1>404 Not Found</h1>
